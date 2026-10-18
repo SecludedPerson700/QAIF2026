@@ -4,7 +4,7 @@
 **Event:** [QPoland Quantum Hackathon] — Production Scheduling Optimization (MetalTech)  
 **License:** MIT  
 
-**Demo video (YouTube):** _link to be added_
+**Demo video (YouTube):** https://youtu.be/LGr9SPuuKHc
 
 ---
 
