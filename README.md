@@ -60,25 +60,15 @@ This repository solves the **ERP production scheduling** challenge for MetalTech
 3. **PCE** — 3 classical bits → 2 qubits via Z/ZZ correlators, EfficientSU2  
 4. **Exact enumeration** + **greedy** (Johnson / NEH) + **random + decode** control arm  
 
----
 
-## 3. What is not done
 
-| Item | Reason |
-|------|--------|
-| VeloxQ backend | Explicitly out of scope for this submission (no VeloxQ access in the build environment) |
-| Hardware execution | Simulator only (Qiskit Aer) |
-| Disruptions / robust anomalies | Not coded; depth preferred on tardiness + setups |
-| Rolling / partial-state planning | Not coded |
-| Per-job configurable routes | Global T→F→S only (natural further extension) |
-| Public YouTube upload | YouTube link header left vacant for the team to fill |
-| Claim of quantum advantage | **Not claimed** — see limitations |
+
 
 ---
 
 ## 4. Scope and limitations
 
-### In scope
+# In scope
 
 - Flow-shop permutation scheduling for the official 2×2 and 3×3 instances  
 - Minimal pairwise-precedence QUBO and Ising map  
@@ -86,7 +76,7 @@ This repository solves the **ERP production scheduling** challenge for MetalTech
 - Stage-2 realism that **does not increase qubit count**  
 - Honest multi-seed verification against exact optima  
 
-### Limitations
+# Limitations
 
 1. Search space is tiny (2! = 2, 3! = 6 permutations). Random sampling matches quantum methods under equal budgets.  
 2. **No statistical quantum advantage** is demonstrated at 1–3 qubits — and none should be expected.  
