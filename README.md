@@ -1,7 +1,7 @@
 # ERP Flow-Shop Scheduling with Minimal-Qubit QUBO
 
 **Team:** Feynman Prodigies  
-**Event:** [QPoland Quantum Hackathon](https://qpoland.org/) — Production Scheduling Optimization (MetalTech)  
+**Event:** [QPoland Quantum Hackathon] — Production Scheduling Optimization (MetalTech)  
 **License:** MIT  
 
 **Demo video (YouTube):** _link to be added_
