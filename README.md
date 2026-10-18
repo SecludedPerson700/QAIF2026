@@ -101,3 +101,44 @@ This repository solves the **ERP production scheduling** challenge for MetalTech
 
 ### Stage 1
 
+| Instance | Method | Best MS | Qubits | Optimal runs |
+|----------|--------|---------|--------|--------------|
+| 2×2 | Exact / Greedy | **4** | 0 | yes |
+| 2×2 | CVaR-QAOA / LR-QAOA | **4** | **1** | **5/5** |
+| 2×2 | Random + decode | **4** | 0 | 5/5 |
+| 3×3 | Exact / Greedy | **8** | 0 | yes |
+| 3×3 | CVaR-QAOA / LR-QAOA | **8** | **3** | **5/5** |
+| 3×3 | PCE | **8** | **2** | **5/5** |
+| 3×3 | Random + decode | **8** | 0 | 5/5 |
+
+### Stage 2 extensions
+
+| Extension | Exact optimum | CVaR-QAOA | Qubits |
+|-----------|---------------|-----------|--------|
+| Tardiness (λ=1) | obj = 8 | 8 (5/5) | 3 |
+| Sequence-dependent setups | makespan = 10 | 10 (5/5) | 3 |
+| Second mill | single 8 / dual 8 | — | — |
+
+**Comparable number for baseline 3×3:** **3 binary variables** (reference: 72 time-indexed at H = 8; ~39 after simple pruning).
+
+---
+
+## 6. How to run
+
+```bash
+# Dependencies
+pip install qiskit qiskit-aer numpy scipy pandas matplotlib reportlab
+
+# Stage 1 baseline (schedules + multi-method comparison)
+python run_baseline.py
+
+# Stage 2 extensions (tardiness, setups, second mill)
+python run_extensions.py
+
+# Planner view (console + Gantt PNGs + planner PDF)
+python run_planner.py
+
+# Optional: notebooks
+cd notebooks
+jupyter nbconvert --to notebook --execute Notebook_1_Formulation_Classical_QUBO.ipynb
+# similarly Notebook_2_*, Notebook_3_*
