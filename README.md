@@ -99,7 +99,7 @@ This repository solves the **ERP production scheduling** challenge for MetalTech
 
 ## 5. Results (verified)
 
-### Stage 1
+# Stage 1
 
 | Instance | Method | Best MS | Qubits | Optimal runs |
 |----------|--------|---------|--------|--------------|
@@ -111,7 +111,7 @@ This repository solves the **ERP production scheduling** challenge for MetalTech
 | 3×3 | PCE | **8** | **2** | **5/5** |
 | 3×3 | Random + decode | **8** | 0 | 5/5 |
 
-### Stage 2 extensions
+# Stage 2 extensions
 
 | Extension | Exact optimum | CVaR-QAOA | Qubits |
 |-----------|---------------|-----------|--------|
@@ -123,7 +123,7 @@ This repository solves the **ERP production scheduling** challenge for MetalTech
 
 ---
 
-## 6. How to run
+# 6. How to run
 
 ```bash
 # Dependencies
